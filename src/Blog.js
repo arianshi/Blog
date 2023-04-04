@@ -36,8 +36,8 @@ export function Blog({data}) {
 
       <div className='thirdParagraph'>
           <p className='contentTitle'>{thirdParagraph.title}</p>
-          {thirdParagraph.content.map((item) => {
-              return (<span key={item.subTitle}>
+          {thirdParagraph.content.map((item, index) => {
+              return (<span key={item + index}>
                   <p className="subTitle">{item.subTitle}</p>
                   {item.content.map((item) => {
                       return (item.text ? <p key={item.text} className='content'>{item.text}</p> :
