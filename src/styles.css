@@ -80,6 +80,7 @@
   flex-direction: column;
   color: rgb(102, 102, 102);
   margin-bottom: 4px;
+  word-break: break-word;
 }
 .link {
   margin-top: 4px;
@@ -95,14 +96,29 @@
   color: rgb(102, 102, 102);
   margin-bottom: 20px;
 }
-.ImageProfile {
+.imageProfile {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 800px;
-  height: 400px;
+  height: 450px;
   background-size: cover;
-  background-image: url(top.webp);
+  background-image: url('top.webp');
   background-repeat: no-repeat;
 }
-
+@media screen and (max-width: 768px) {
+  .contentWrapper {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 8px);
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .imageProfile {
+    width: calc(100% - 16px);
+    max-width: 100%;
+    height: 250px;
+    background-size: contain;
+    background-image: url('top.webp');
+  }
+}
