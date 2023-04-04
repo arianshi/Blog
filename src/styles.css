@@ -95,3 +95,14 @@
   color: rgb(102, 102, 102);
   margin-bottom: 20px;
 }
+.ImageProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 400px;
+  background-size: cover;
+  background-image: url(top.webp);
+  background-repeat: no-repeat;
+}
+
